@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.PatientInformation">
+   <children>
+      <Label layoutX="140.0" layoutY="54.0" prefHeight="88.0" prefWidth="630.0" style="-fx-background-color: e2e2e2;" />
+      <Label layoutX="184.0" layoutY="88.0" text="病历号：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="144.0" layoutY="232.0" prefHeight="313.0" prefWidth="630.0" style="-fx-background-color: e2e2e2;" />
+      <TextField fx:id="ubingli" layoutX="261.0" layoutY="86.0" />
+      <Button fx:id="usearch" layoutX="616.0" layoutY="83.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #1c92d2;" text="查询" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="144.0" layoutY="172.0" text="患者信息">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="263.0" text="患者姓名：" />
+      <Label fx:id="urealname" layoutX="311.0" layoutY="263.0" text="" />
+      <Label layoutX="240.0" layoutY="289.0" text="患者性别：" />
+      <Label layoutX="240.0" layoutY="313.0" text="身份证号：" />
+      <Label layoutX="240.0" layoutY="338.0" text="出生日期：" />
+      <Label layoutX="240.0" layoutY="365.0" text="年龄：" />
+      <Label layoutX="240.0" layoutY="392.0" text="家庭住址：" />
+      <Label layoutX="240.0" layoutY="418.0" text="挂号科室：" />
+      <Label layoutX="241.0" layoutY="442.0" text="挂号医生：" />
+      <Label layoutX="243.0" layoutY="468.0" text="挂号级别：" />
+      <Label layoutX="243.0" layoutY="494.0" text="挂号日期：" />
+      <Label layoutX="455.0" layoutY="263.0" text="诊断结果：" />
+      <Label layoutX="455.0" layoutY="289.0" text="药品信息：" />
+      <Label layoutX="456.0" layoutY="313.0" text="药品总价：" />
+      <Label layoutX="456.0" layoutY="338.0" text="患者余额：" />
+      <Label fx:id="ugender" layoutX="311.0" layoutY="289.0" text="" />
+      <Label fx:id="usfzh" layoutX="311.0" layoutY="313.0" prefHeight="15.0" prefWidth="40.0" text="" />
+      <Label fx:id="ubrithday" layoutX="311.0" layoutY="338.0" text="" />
+      <Label fx:id="uage" layoutX="311.0" layoutY="365.0" text="" />
+      <Label fx:id="uhomeadress" layoutX="311.0" layoutY="392.0" text="" />
+      <Label fx:id="udeptname" layoutX="311.0" layoutY="418.0" text="" />
+      <Label fx:id="udoctorname" layoutX="311.0" layoutY="442.0" text="" />
+      <Label fx:id="ulevel" layoutX="311.0" layoutY="468.0" text="" />
+      <Label fx:id="udate" layoutX="311.0" layoutY="494.0" text="" />
+      <Label fx:id="uresult" layoutX="523.0" layoutY="263.0" text="" />
+      <Label fx:id="udrugInformation" layoutX="525.0" layoutY="289.0" text="" />
+      <Label fx:id="udrugPrice" layoutX="525.0" layoutY="313.0" text="" />
+      <Label fx:id="ubalance" layoutX="525.0" layoutY="338.0" text="" />
+      <Button fx:id="fh" layoutX="690.0" layoutY="83.0" mnemonicParsing="false" onAction="#fanhui" style="-fx-background-color: #1c92d2;" text="返回" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DoctorMenu">
+   <children>
+      <Label layoutX="68.0" layoutY="474.0" text="科室：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="444.0" text="级别：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="414.0" text="编号：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="382.0" text="姓名：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Text fx:id="nameText" layoutX="110.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="54.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="idText" layoutX="107.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="60.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="levelText" layoutX="110.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="83.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="roomText" layoutX="110.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="83.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Label layoutX="357.0" layoutY="158.0" prefHeight="38.0" prefWidth="463.0" style="-fx-background-color: #06beb6;" />
+      <ListView fx:id="kzList" layoutX="357.0" layoutY="196.0" prefHeight="116.0" prefWidth="463.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="363.0" layoutY="167.0" text="姓名  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="403.0" layoutY="167.0" text="看诊状态">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="469.0" layoutY="165.0" prefHeight="24.0" prefWidth="92.0" text="病例号">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="354.0" layoutY="115.0" prefHeight="31.0" prefWidth="154.0" text="当前科室病人">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text fill="#757575" layoutX="68.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="今日已诊断：">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="diagnose" layoutX="144.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="53.999987930452335">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="61.0" layoutY="64.0" prefHeight="24.0" prefWidth="205.0" text="当前科室医生">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="194.0" fitWidth="194.0" layoutX="68.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/微信图片_20240602104408.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="353.0" layoutY="344.0" prefHeight="24.0" prefWidth="136.0" text="历史看诊记录">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="kzHistory" layoutX="357.0" layoutY="401.0" prefHeight="156.0" prefWidth="463.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="357.0" layoutY="382.0" prefHeight="24.0" prefWidth="463.0" style="-fx-background-color: #06beb6;" />
+      <Text layoutX="364.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名" wrappingWidth="47.99999322970325">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="400.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="病例号">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="456.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="看诊内容">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Separator layoutX="335.0" layoutY="104.0" prefHeight="3.0" prefWidth="531.0" />
+      <Separator layoutX="339.0" layoutY="333.0" prefHeight="3.0" prefWidth="524.0" />
+      <Button fx:id="countChange" layoutX="718.0" layoutY="61.0" mnemonicParsing="false" onAction="#countChangeButton" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: #1c92d2;" text="切换账号" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

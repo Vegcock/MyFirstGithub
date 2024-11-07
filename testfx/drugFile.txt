@@ -1,0 +1,1 @@
+[{"name":"镇痛药  ","num":2550,"number":101,"price":3.0},{"name":"抗生素  ","num":157,"number":102,"price":50.0},{"name":"抗过敏药","num":1269,"number":103,"price":30.0},{"name":"阿司匹林","num":118,"number":104,"price":15.0},{"name":"青霉素  ","num":297,"number":105,"price":20.0},{"name":"头孢    ","num":1295,"number":106,"price":17.0}]

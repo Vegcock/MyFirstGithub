@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="_pane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.LoginView">
+   <children>
+      <PasswordField fx:id="_password" layoutX="47.0" layoutY="126.0" onAction="#pwEvent" promptText="输入密码" />
+      <TextField fx:id="_id" layoutX="134.0" layoutY="90.0" onAction="#idEvent" promptText="输入账号" />
+      <Button fx:id="_login" layoutX="66.0" layoutY="53.0" mnemonicParsing="false" onAction="#login" text="进入" />
+      <Label layoutX="301.0" layoutY="41.0" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: white;" text="   密码" />
+      <TableView fx:id="_table" layoutX="255.0" layoutY="422.0" prefHeight="51.0" prefWidth="186.0">
+        <columns>
+          <TableColumn fx:id="_tableC1" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="_tableC2" prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="_tableC3" prefWidth="75.0" text="C3" />
+            <TableColumn fx:id="_tableC4" prefWidth="75.0" text="C4" />
+        </columns>
+      </TableView>
+      <ListView fx:id="_listView" layoutX="644.0" layoutY="168.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="116.0" layoutY="206.0" prefHeight="24.0" prefWidth="319.0" text="                东软医院管理系统" />
+      <Label layoutX="142.0" layoutY="59.0" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: white;" text="   账号" />
+      <VBox prefHeight="200.0" prefWidth="100.0" />
+      <TextArea layoutX="557.0" layoutY="416.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

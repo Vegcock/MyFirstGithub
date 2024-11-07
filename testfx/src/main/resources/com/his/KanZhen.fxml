@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.KanZhen">
+   <children>
+      <Label layoutX="47.0" layoutY="127.0" prefHeight="137.0" prefWidth="747.0" style="-fx-background-color: e2e2e2;" />
+      <Label layoutX="47.0" layoutY="352.0" prefHeight="151.0" prefWidth="747.0" style="-fx-background-color: e2e2e2;" />
+      <Label layoutX="57.0" layoutY="77.0" prefHeight="32.0" prefWidth="101.0" text="患者信息">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="146.0" text="姓名" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="214.0" text="年龄" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="509.0" layoutY="145.0" text="身份证号" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="517.0" layoutY="214.0" text="家庭住址" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="nameInput" layoutX="119.0" layoutY="142.0" prefHeight="29.0" prefWidth="69.0" />
+      <TextField fx:id="idInput" layoutX="577.0" layoutY="141.0" prefHeight="29.0" prefWidth="161.0" promptText="请输入身份证号" />
+      <TextField fx:id="addressInput" layoutX="577.0" layoutY="212.0" prefHeight="29.0" prefWidth="161.0" promptText="请输入家庭住址" />
+      <ChoiceBox fx:id="choiceBox" disable="true" layoutX="123.0" layoutY="223.0" prefHeight="23.0" prefWidth="42.0" visible="false" />
+      <Label layoutX="308.0" layoutY="144.0" text="性别" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="282.0" layoutY="214.0" text="出生年月" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="birthdayInput" layoutX="345.0" layoutY="212.0" prefHeight="29.0" prefWidth="112.0" promptText="出生日期" />
+      <ChoiceBox fx:id="sexChoiceBox" layoutX="353.0" layoutY="140.0" prefHeight="29.0" prefWidth="56.0" />
+      <Button fx:id="submit" layoutX="742.0" layoutY="295.0" mnemonicParsing="false" onAction="#clickSubmit" prefHeight="29.0" prefWidth="48.0" style="-fx-background-color: #1c92d2;" text="提交" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="57.0" layoutY="294.0" prefHeight="32.0" prefWidth="101.0" text="挂号信息">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="376.0" prefHeight="23.0" prefWidth="56.0" text="挂号科室" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="333.0" layoutY="380.0" text="挂号级别" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label disable="true" layoutX="71.0" layoutY="408.0" text="看诊医生" textFill="#857d7d" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="449.0" text="看诊日期" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="kzDate" layoutX="138.0" layoutY="445.0" prefHeight="23.0" prefWidth="253.0" promptText="看诊日期" />
+      <Button fx:id="checkButton" layoutX="618.0" layoutY="73.0" mnemonicParsing="false" onAction="#check" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: #1c92d2;" text="查看已有患者信息" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Separator layoutX="37.0" layoutY="336.0" prefHeight="15.0" prefWidth="768.0" />
+      <Separator layoutX="37.0" layoutY="112.0" prefHeight="15.0" prefWidth="768.0" />
+      <ComboBox fx:id="registDept" layoutX="130.0" layoutY="376.0" prefHeight="23.0" prefWidth="80.0" />
+      <ComboBox fx:id="registLevel" layoutX="400.0" layoutY="378.0" prefHeight="23.0" prefWidth="80.0" />
+      <ComboBox fx:id="registDoctorName" layoutX="664.0" layoutY="378.0" prefHeight="23.0" prefWidth="80.0" />
+      <Label layoutX="599.0" layoutY="380.0" text="挂号医生" textFill="#857d7d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="ageInputText" layoutX="119.0" layoutY="209.0" prefHeight="29.0" prefWidth="69.0" />
+      <Separator layoutX="37.0" layoutY="279.0" prefHeight="1.0" prefWidth="768.0" />
+      <Separator layoutX="47.0" layoutY="425.0" prefHeight="3.0" prefWidth="747.0" />
+      <Separator layoutX="47.0" layoutY="194.0" prefHeight="3.0" prefWidth="747.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.LocationController">
+   <children>
+      <Label layoutX="30.0" layoutY="39.0" prefHeight="111.0" prefWidth="502.0" style="-fx-background-color: e2e2e2;" />
+      <Label layoutX="67.0" layoutY="43.0" prefHeight="104.0" prefWidth="457.0" text="本方法将调用高德地图的API来获取定位">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="uget" layoutX="638.0" layoutY="83.0" mnemonicParsing="false" onAction="#getLocation" prefHeight="23.0" prefWidth="82.0" style="-fx-background-color: #1c92d2;" text="获取信息" />
+      <Label fx:id="uProvince" layoutX="256.0" layoutY="207.0" prefHeight="24.0" prefWidth="125.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="207.0" text="Province">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="95.0" layoutY="248.0" text="City">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Separator layoutY="168.0" prefHeight="3.0" prefWidth="880.0" />
+      <Label layoutX="89.0" layoutY="288.0" text="Adcode">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="89.0" layoutY="329.0" text="Rectangle">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="uCity" layoutX="258.0" layoutY="248.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="uAdcode" layoutX="258.0" layoutY="288.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="uRecangle" layoutX="258.0" layoutY="329.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

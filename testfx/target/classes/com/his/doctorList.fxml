@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DoctorList">
+   <children>
+      <ListView fx:id="doctorList" layoutX="83.0" layoutY="197.0" prefHeight="365.0" prefWidth="689.0" style="-fx-background-color: e2e2e2;" />
+      <Button fx:id="buttonRegister" layoutX="693.0" layoutY="116.0" mnemonicParsing="false" onAction="#registerButton" style="-fx-background-color: #1c92d2;" text="注册" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="83.0" layoutY="167.0" prefHeight="29.0" prefWidth="689.0" style="-fx-background-color: #06beb6;" />
+      <Label layoutX="105.0" layoutY="172.0" text="编号" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="172.0" text="名字" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="241.0" layoutY="172.0" text="级别" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="310.0" layoutY="172.0" text="科室" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="89.0" layoutY="46.0" text="医生信息">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Separator layoutX="62.0" layoutY="99.0" prefHeight="5.0" prefWidth="709.0" />
+      <Separator layoutX="62.0" layoutY="153.0" prefHeight="5.0" prefWidth="709.0" />
+      <TextField fx:id="buttonSearch" layoutX="595.0" layoutY="170.0" />
+   </children>
+</AnchorPane>

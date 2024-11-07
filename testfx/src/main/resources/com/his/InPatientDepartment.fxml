@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.InPatientDepartment">
+   <children>
+      <ListView fx:id="inPatientList" layoutX="94.0" layoutY="170.0" prefHeight="248.0" prefWidth="534.0" />
+      <Button layoutX="588.0" layoutY="120.0" mnemonicParsing="false" onAction="#add" text="添加" />
+      <TextField fx:id="idInputText" layoutX="101.0" layoutY="70.0" prefHeight="23.0" prefWidth="74.0" />
+      <Button layoutX="523.0" layoutY="120.0" mnemonicParsing="false" onAction="#remove" text="移除" />
+      <Label layoutX="94.0" layoutY="152.0" text="姓名         性别          年龄      身份证号      看诊状态         开药状态           余额        病例号" />
+      <Button layoutX="523.0" layoutY="70.0" mnemonicParsing="false" onAction="#search" text="查询信息" />
+      <Label layoutX="98.0" layoutY="105.0" text="姓名" />
+      <Label layoutX="98.0" layoutY="124.0" text="年龄" />
+      <Label layoutX="230.0" layoutY="105.0" text="性别" />
+      <Label layoutX="227.0" layoutY="124.0" text="身份证号" />
+      <Label fx:id="nameLabel" layoutX="160.0" layoutY="105.0" prefHeight="15.0" prefWidth="40.0" text="name" />
+      <Label fx:id="ageLabel" layoutX="160.0" layoutY="124.0" text="age" />
+      <Label fx:id="genderLabel" layoutX="306.0" layoutY="105.0" text="gender" />
+      <Label fx:id="cardLabel" layoutX="306.0" layoutY="124.0" text="card" />
+   </children>
+</AnchorPane>

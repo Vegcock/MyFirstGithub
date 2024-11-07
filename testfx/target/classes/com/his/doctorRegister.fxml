@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DoctorRegister">
+   <Label layoutX="144.0" layoutY="280.0" prefHeight="159.0" prefWidth="577.0" style="-fx-background-color: e2e2e2;" />
+   <Label layoutX="196.0" layoutY="302.0" text="账号:" textFill="#757575">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="196.0" layoutY="352.0" text="密码：" textFill="#757575">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="530.0" layoutY="302.0" text="科室：" textFill="#757575">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="196.0" layoutY="398.0" text="姓名：" textFill="#757575">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="530.0" layoutY="352.0" text="级别：" textFill="#757575">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="doctorCountText" layoutX="232.0" layoutY="298.0" />
+   <TextField fx:id="doctorPasswordText" layoutX="231.0" layoutY="349.0" />
+   <PasswordField fx:id="passwordText" layoutX="231.0" layoutY="348.0" prefHeight="23.0" prefWidth="161.0" />
+   <TextField fx:id="doctorNameText" layoutX="232.0" layoutY="394.0" />
+   <Button fx:id="buttonRegister" layoutX="566.0" layoutY="160.0" mnemonicParsing="false" onAction="#register" prefHeight="29.0" prefWidth="58.0" style="-fx-background-color: #1c92d2;" text="保存" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Label layoutX="133.0" layoutY="72.0" text="新医生注册">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <ChoiceBox fx:id="doctorRoomChoiceBox" layoutX="566.0" layoutY="298.0" prefHeight="23.0" prefWidth="75.0" />
+   <ChoiceBox fx:id="doctorLevelChoiceBox" layoutX="566.0" layoutY="348.0" prefHeight="23.0" prefWidth="75.0" />
+   <Button fx:id="clearButton" layoutX="663.0" layoutY="160.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="29.0" prefWidth="58.0" style="-fx-background-color: #1c92d2;" text="清空" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Separator layoutX="133.0" layoutY="229.0" prefHeight="0.0" prefWidth="600.0" />
+   <Separator layoutX="133.0" layoutY="136.0" prefHeight="3.0" prefWidth="600.0" />
+   <Separator layoutX="144.0" layoutY="326.0" prefHeight="15.0" prefWidth="577.0" />
+   <Separator layoutX="144.0" layoutY="380.0" prefHeight="3.0" prefWidth="577.0" />
+</AnchorPane>

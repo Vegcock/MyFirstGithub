@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DeleteMenu">
+   <children>
+      <Label layoutX="158.0" layoutY="163.0" prefHeight="343.0" prefWidth="564.0" style="-fx-background-color: e2e2e2;" textFill="WHITE" />
+      <Label layoutX="158.0" layoutY="165.0" prefHeight="32.0" prefWidth="564.0" style="-fx-background-color: #06beb6;" />
+      <ListView fx:id="dataList" layoutX="158.0" layoutY="195.0" prefHeight="312.0" prefWidth="564.0" />
+      <Label layoutX="166.0" layoutY="171.0" prefHeight="19.0" prefWidth="544.0" text="姓名         性别          年龄      身份证号      看诊状态         开药状态                余额              病例号" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="deleteButton" layoutX="610.0" layoutY="124.0" mnemonicParsing="false" onAction="#delete" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #1c92d2;" text="删除" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="158.0" layoutY="72.0" text="患者信息删除">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.PageTransform">
+   <left>
+      <Accordion prefHeight="749.0" prefWidth="194.0" BorderPane.alignment="CENTER_LEFT">
+        <panes>
+            <TitledPane fx:id="registration" animated="false" disable="true" prefHeight="677.0" prefWidth="187.0" text="挂号">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="204.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="registrationScene" mnemonicParsing="false" onAction="#registrationButton" prefHeight="43.0" prefWidth="193.0" style="-fx-background-color: white;" text="挂号界面" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="patientMessageCheck" layoutY="43.0" mnemonicParsing="false" onAction="#patientMessageCheckButton" prefHeight="47.0" prefWidth="194.0" style="-fx-background-color: white;" text="患者信息查看" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="patientMessageEdit" layoutY="90.0" mnemonicParsing="false" onAction="#patientMessageEditButton" prefHeight="50.0" prefWidth="194.0" style="-fx-background-color: white;" text="修改患者信息" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="patientMessageDelete" layoutY="140.0" mnemonicParsing="false" onAction="#patientMessageDeleteButton" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: white;" text="删除患者信息" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+              </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+          <TitledPane fx:id="diagnose" animated="false" disable="true" graphicTextGap="8.0" prefHeight="687.0" prefWidth="218.0" text="看诊             ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="doctorLogin" mnemonicParsing="false" onAction="#doctorLoginButton" prefHeight="49.0" prefWidth="193.0" style="-fx-background-color: white;" text="看诊医生登录" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="doctorRegister" layoutY="49.0" mnemonicParsing="false" onAction="#doctorRegisterButton" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: white;" text="看诊医生注册" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="doctorMenu" disable="true" layoutY="103.0" mnemonicParsing="false" onAction="#doctorMenuButton" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: white;" text="看诊医生信息" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="patientSearch" disable="true" layoutY="154.0" mnemonicParsing="false" onAction="#patientSearchButton" prefHeight="52.0" prefWidth="193.0" style="-fx-background-color: white;" text="患者查询" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="doctorList" layoutX="-1.0" layoutY="206.0" mnemonicParsing="false" onAction="#doctorListButton" prefHeight="53.0" prefWidth="193.0" style="-fx-background-color: white;" text="看诊医生信息查询" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+          </TitledPane>
+            <TitledPane fx:id="pharmacy" animated="false" disable="true" style="-fx-background-color: white;" text="药房">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="pharmacyDrugOutput" layoutX="-1.0" mnemonicParsing="false" onAction="#pharmacyDrugOutputButton" prefHeight="52.0" prefWidth="194.0" style="-fx-background-color: white;" text="药房出药" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="pharmacyDrugInput" layoutX="-1.0" layoutY="52.0" mnemonicParsing="false" onAction="#pharmacyDrugInputButton" prefHeight="54.0" prefWidth="194.0" style="-fx-background-color: white;" text="药房入库" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="pharmacySearch" layoutX="-1.0" layoutY="106.0" mnemonicParsing="false" onAction="#pharmacySearchButton" prefHeight="57.0" prefWidth="194.0" style="-fx-background-color: white;" text="药品查询" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="charge" animated="false" disable="true" text="充值">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="charging" mnemonicParsing="false" onAction="#chargingButton" prefHeight="52.0" prefWidth="195.0" style="-fx-background-color: white;" text="进行充值" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="hospitalize" animated="false" disable="true" text="住院">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="hospitalizeInfomation" mnemonicParsing="false" onAction="#hospitalizeInfomationButton" prefHeight="52.0" prefWidth="194.0" style="-fx-background-color: white;" text="住院信息" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="exitPane" animated="false" text="退出">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="exit" layoutX="-2.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="52.0" prefWidth="196.0" style="-fx-background-color: white;" text="退出" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="change" layoutX="-3.0" layoutY="57.0" mnemonicParsing="false" onAction="#changeButton" prefHeight="53.0" prefWidth="197.0" style="-fx-background-color: white;" text="切换账号" textFill="#8a8e90">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="1031.0" style="-fx-background-color: white;">
+         <children>
+            <Label contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" prefHeight="51.0" prefWidth="1013.0" style="-fx-background-color: #06beb6;" text="  东软云医院系统" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="anchorPane" prefHeight="720.0" prefWidth="853.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="752.0" prefWidth="9.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

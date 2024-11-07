@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.ChargeMenu">
+   <children>
+      <Label layoutX="111.0" layoutY="78.0" prefHeight="76.0" prefWidth="618.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="112.0" layoutY="454.0" prefHeight="117.0" prefWidth="613.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="111.0" layoutY="224.0" prefHeight="147.0" prefWidth="618.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="111.0" layoutY="175.0" text="患者信息">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="316.0" text="看诊费用" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="553.0" layoutY="253.0" text="性别" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="386.0" layoutY="251.0" text="年龄" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="135.0" layoutY="316.0" text="身份证号" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nameTextField" layoutX="244.0" layoutY="104.0" promptText="请输入病例号" />
+      <Label layoutX="166.0" layoutY="106.0" text="病例号:" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="nameLabel" layoutX="248.0" layoutY="252.0" text="label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="ageLabel" layoutX="447.0" layoutY="251.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="genderLabel" layoutX="607.0" layoutY="254.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="cardNumberLabel" layoutX="248.0" layoutY="316.0" text="label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="557.0" layoutY="317.0" text="余额" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="balanceLabel" layoutX="611.0" layoutY="316.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="413.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="chargeTextField" layoutX="310.0" layoutY="501.0" promptText="输入金额（人民币）" />
+      <Button fx:id="chargeButton" layoutX="635.0" layoutY="410.0" mnemonicParsing="false" onAction="#chargeClick" prefHeight="29.0" prefWidth="72.0" style="-fx-background-color: #1c92d2;" text="充值" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="checkButton" layoutX="643.0" layoutY="34.0" mnemonicParsing="false" onAction="#check" prefHeight="32.0" prefWidth="56.0" style="-fx-background-color: #1c92d2;" text="查询" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="feeLabel" layoutX="447.0" layoutY="316.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="165.0" layoutY="251.0" text="姓名" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Separator layoutX="112.0" layoutY="167.0" prefHeight="0.0" prefWidth="613.0" />
+      <Separator layoutX="112.0" layoutY="389.0" prefHeight="3.0" prefWidth="613.0" />
+      <Separator layoutX="112.0" layoutY="296.0" prefHeight="3.0" prefWidth="613.0" />
+      <Label layoutX="154.0" layoutY="503.0" text="请输入你要充值的金额:" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="34.0" text="病人查询">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="409.0" text="充值金额">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

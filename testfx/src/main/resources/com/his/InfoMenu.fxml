@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.InfoMenu">
+   <children>
+      <ListView fx:id="infoList" layoutX="110.0" layoutY="174.0" prefHeight="309.0" prefWidth="607.0" />
+      <Label layoutX="110.0" layoutY="142.0" prefHeight="32.0" prefWidth="607.0" style="-fx-background-color: #06beb6;" text="  姓名    性别       年龄        身份证号      看诊状态     开药状态          余额      病例号" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="110.0" layoutY="72.0" text="当前患者信息">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

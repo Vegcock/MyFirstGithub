@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DiagnoseView">
+   <content>
+      <AnchorPane prefHeight="589.0" prefWidth="879.0">
+         <children>
+            <MenuBar prefHeight="38.0" prefWidth="879.0">
+               <menus>
+                  <Menu text="diagnose">
+                    <items>
+                      <MenuItem fx:id="diaLogin" mnemonicParsing="false" onAction="#login" text="Login" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="doctor">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="else">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+               </menus>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MenuBar>
+            <Label layoutX="131.0" layoutY="138.0" text="Label" />
+            <Label layoutX="115.0" layoutY="234.0" prefHeight="229.0" prefWidth="623.0" text="Label">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="467.0" layoutY="134.0" text="Label">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

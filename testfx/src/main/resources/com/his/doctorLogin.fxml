@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DoctorLogin">
+   <children>
+      <Label layoutX="125.0" layoutY="214.0" prefHeight="146.0" prefWidth="597.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="158.0" layoutY="247.0" prefHeight="19.0" prefWidth="42.0" text="账号：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="304.0" text="密码：" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="countText" layoutX="230.0" layoutY="242.0" prefHeight="29.0" prefWidth="194.0" promptText="请输入账号" />
+      <Button fx:id="returnLogin" layoutX="536.0" layoutY="242.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #1c92d2;" text="登录" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="122.0" layoutY="137.0" text="看诊医生登录">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonReturn" layoutX="536.0" layoutY="302.0" mnemonicParsing="false" onAction="#returnButton" style="-fx-background-color: #1c92d2;" text="退出" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="doctorPasswordText" layoutX="230.0" layoutY="302.0" prefHeight="29.0" prefWidth="194.0" />
+      <PasswordField fx:id="passwordText" layoutX="230.0" layoutY="302.0" prefHeight="29.0" prefWidth="194.0" promptText="请输入密码" />
+      <Separator layoutX="122.0" layoutY="191.0" prefHeight="3.0" prefWidth="597.0" />
+   </children>
+</AnchorPane>

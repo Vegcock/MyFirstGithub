@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DrugInformationController">
+   <children>
+      <Label layoutX="132.0" layoutY="132.0" prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #06beb6;" />
+      <Label layoutX="130.0" layoutY="59.0" text="药库药品信息">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <ListView fx:id="udrugInformation" layoutX="134.0" layoutY="233.0" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="168.0" layoutY="156.0" prefHeight="15.0" prefWidth="567.0" text="药品名称            药品编号            药品价格            药品数量            " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

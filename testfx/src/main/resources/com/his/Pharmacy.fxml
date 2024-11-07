@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.PharmacyController">
+   <Button layoutX="407.0" layoutY="118.0" mnemonicParsing="false" onAction="#show1" prefHeight="23.0" prefWidth="47.0" text="查询" />
+   <Label layoutX="134.0" layoutY="122.0" text="病例号：" />
+   <PasswordField fx:id="sfzh" layoutX="202.0" layoutY="118.0" />
+   <Label layoutX="134.0" layoutY="153.0" text="患者姓名：" />
+   <Label layoutX="333.0" layoutY="153.0" text="患者年龄：" />
+   <Label layoutX="134.0" layoutY="183.0" text="患者性别：" />
+   <Separator layoutX="131.0" layoutY="299.0" prefHeight="2.0" prefWidth="627.0" />
+   <Label layoutX="134.0" layoutY="330.0" text="药品信息">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <Label layoutX="204.0" layoutY="442.0" text="药品总价：" />
+   <Button layoutX="662.0" layoutY="438.0" mnemonicParsing="false" onAction="#show2" text="出库" />
+   <Label fx:id="uname" layoutX="220.0" layoutY="153.0" text="" />
+   <Label fx:id="uage" layoutX="405.0" layoutY="153.0" text="" />
+   <Label fx:id="ugender" layoutX="220.0" layoutY="183.0" text="" />
+   <Label layoutX="333.0" layoutY="183.0" text="是否问诊：" />
+   <Label fx:id="uiskz" layoutX="393.0" layoutY="183.0" prefHeight="15.0" prefWidth="76.0" text="" />
+   <Label fx:id="uprice" layoutX="281.0" layoutY="442.0" text="" />
+   <Label layoutX="134.0" layoutY="212.0" text="医生建议：" />
+   <Label fx:id="uadv" layoutX="205.0" layoutY="212.0" prefHeight="15.0" prefWidth="423.0" text="" />
+   <ChoiceBox fx:id="drugChoiceBox" layoutX="312.0" layoutY="372.0" prefHeight="23.0" prefWidth="161.0" />
+   <Label fx:id="udrugchoice" layoutX="210.0" layoutY="357.0" text="" />
+   <Button layoutX="658.0" layoutY="372.0" mnemonicParsing="false" onAction="#show3" prefHeight="23.0" prefWidth="47.0" text="查询" />
+   <Label layoutX="134.0" layoutY="238.0" text="余额：" />
+   <Label layoutX="134.0" layoutY="56.0" prefHeight="33.0" prefWidth="76.0" text="患者信息">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="ubalance" layoutX="193.0" layoutY="238.0" />
+   <Button fx:id="bt1" layoutX="662.0" layoutY="226.0" mnemonicParsing="false" onAction="#show5" text="启用药品信息" />
+   <Button fx:id="bt2" layoutX="662.0" layoutY="110.0" mnemonicParsing="false" onAction="#show4" text="启用药品入库" />
+</AnchorPane>

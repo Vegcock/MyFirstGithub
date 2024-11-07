@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.EmperorView">
+   <children>
+      <AnchorPane layoutX="52.0" layoutY="42.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="66.0" layoutY="157.0" mnemonicParsing="false" text="Button" />
+            <ScrollBar layoutX="121.0" layoutY="80.0" orientation="VERTICAL" />
+            <Slider layoutX="52.0" layoutY="97.0" orientation="VERTICAL" prefHeight="89.0" prefWidth="14.0" />
+            <TableView layoutX="66.0" layoutY="-43.0" prefHeight="200.0" prefWidth="55.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

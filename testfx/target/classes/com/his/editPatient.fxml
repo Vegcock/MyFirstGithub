@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.EditPatient">
+   <children>
+      <Label layoutX="156.0" layoutY="154.0" prefHeight="86.0" prefWidth="639.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="156.0" layoutY="270.0" prefHeight="214.0" prefWidth="639.0" style="-fx-background-color: f2f2f2;" />
+      <TextField fx:id="nameText" layoutX="235.0" layoutY="291.0" prefHeight="23.0" prefWidth="106.0" />
+      <TextField fx:id="genderText" layoutX="438.0" layoutY="291.0" prefHeight="23.0" prefWidth="106.0" />
+      <TextField fx:id="ageText" layoutX="625.0" layoutY="291.0" prefHeight="23.0" prefWidth="106.0" />
+      <TextField fx:id="search" layoutX="363.0" layoutY="197.0" prefHeight="29.0" prefWidth="152.0" promptText="请输入病例号" />
+      <Button fx:id="searchButton" layoutX="549.0" layoutY="197.0" mnemonicParsing="false" onAction="#searchAction" style="-fx-background-color: #1c92d2;" text="查询" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="nameButton" layoutX="301.0" layoutY="326.0" mnemonicParsing="false" onAction="#nameEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="ageButton" layoutX="691.0" layoutY="326.0" mnemonicParsing="false" onAction="#ageEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="genderButton" layoutX="500.0" layoutY="326.0" mnemonicParsing="false" onAction="#genderEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="confirmButton" layoutX="738.0" layoutY="102.0" mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: #1c92d2;" text="确认" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="172.0" layoutY="164.0" text="请输入要修改患者的病例号">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="196.0" layoutY="293.0" text="姓名" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="402.0" layoutY="293.0" text="性别" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="589.0" layoutY="295.0" text="年龄" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="172.0" layoutY="390.0" text="身份证号" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="377.0" layoutY="390.0" text="家庭住址" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="565.0" layoutY="390.0" text="出生日期" textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="cardNumberText" layoutX="234.0" layoutY="386.0" prefHeight="23.0" prefWidth="106.0" />
+      <TextField fx:id="addressText" layoutX="437.0" layoutY="386.0" prefHeight="23.0" prefWidth="106.0" />
+      <TextField fx:id="birthDateText" layoutX="624.0" layoutY="386.0" prefHeight="23.0" prefWidth="106.0" />
+      <Button fx:id="cardNumberButton" layoutX="300.0" layoutY="427.0" mnemonicParsing="false" onAction="#cardNumberEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="addressButton" layoutX="500.0" layoutY="427.0" mnemonicParsing="false" onAction="#addressEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="birthdayDateButton" layoutX="690.0" layoutY="427.0" mnemonicParsing="false" onAction="#birthDateEdit" style="-fx-background-color: #1c92d2;" text="修改" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="156.0" layoutY="49.0" text="患者信息修改">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="156.0" layoutY="79.0" prefHeight="15.0" prefWidth="639.0" />
+      <Separator layoutX="156.0" layoutY="139.0" prefHeight="0.0" prefWidth="639.0" />
+      <Separator layoutX="156.0" layoutY="254.0" prefHeight="3.0" prefWidth="639.0" />
+   </children>
+</AnchorPane>

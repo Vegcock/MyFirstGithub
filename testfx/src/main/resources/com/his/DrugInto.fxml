@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="up" prefHeight="620.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.DrugIntoController">
+   <children>
+      <Label layoutX="103.0" layoutY="274.0" prefHeight="113.0" prefWidth="692.0" style="-fx-background-color: f2f2f2;" />
+      <Label layoutX="134.0" layoutY="323.0" text="药品名称： " textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="503.0" layoutY="321.0" text="新增数量： " textFill="#757575">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="udrug" layoutX="243.0" layoutY="319.0" prefWidth="150.0" />
+      <TextField fx:id="utext" layoutX="591.0" layoutY="319.0" />
+      <Button fx:id="but" layoutX="701.0" layoutY="214.0" mnemonicParsing="false" onAction="#show1" prefHeight="23.0" prefWidth="94.0" style="-fx-background-color: #1c92d2;" text="确认入库" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Separator layoutX="103.0" layoutY="260.0" prefHeight="15.0" prefWidth="692.0" />
+      <Separator layoutX="103.0" layoutY="186.0" prefHeight="0.0" prefWidth="692.0" />
+      <Label layoutX="103.0" layoutY="132.0" text="药品入库">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.LoginController">
+   <left>
+      <Accordion prefHeight="400.0" prefWidth="114.0" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="untitled 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="untitled 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="untitled 3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="bt1" mnemonicParsing="false" prefHeight="67.0" prefWidth="112.0" text="药房出药" onAction="#show1" />
+                        <Button fx:id="bt2" layoutY="67.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="111.0" text="药房入库" onAction="#show2"/>
+                        <Button fx:id="bt3" layoutY="139.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="112.0" text="药品查询" onAction="#show3"/>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+   <center>
+      <HBox fx:id="uhbox" prefHeight="400.0" prefWidth="229.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

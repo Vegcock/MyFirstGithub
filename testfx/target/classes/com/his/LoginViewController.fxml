@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="logingPlatform" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.his.controller.LoginViewController">
+
+
+   <children>
+      <Label layoutX="151.0" layoutY="42.0" prefHeight="47.0" prefWidth="419.0" text="欢迎使用云医院管理系统">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <ImageView fitHeight="254.0" fitWidth="606.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="273.0" prefHeight="24.0" prefWidth="61.0" text="用户名：">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="274.0" prefHeight="21.0" prefWidth="47.0" text="密码：">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="unserInput" layoutX="127.0" layoutY="273.0" onAction="#userNameInput" prefHeight="24.0" prefWidth="159.0" promptText="请输入用户名" />
+      <Button fx:id="loginButton" layoutX="211.0" layoutY="315.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="178.0" text="登录">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="542.0" layoutY="370.0" mnemonicParsing="false" onAction="#clikExit" prefHeight="23.0" prefWidth="47.0" text="退出" />
+      <PasswordField fx:id="password" layoutX="371.0" layoutY="273.0" prefHeight="23.0" prefWidth="159.0" promptText="请输入密码" />
+      <Label layoutX="16.0" layoutY="373.0" text="版本号：1.0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="imPatient" layoutX="522.0" layoutY="12.0" mnemonicParsing="false" onAction="#imPatient" text="我是患者" />
+      <Separator layoutX="1.0" layoutY="356.0" prefHeight="13.0" prefWidth="600.0" />
+      <Separator layoutX="-1.0" layoutY="243.0" prefHeight="13.0" prefWidth="600.0" />
+      <Button layoutX="522.0" layoutY="54.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="64.0" text="医院地址" fx:id="location" onAction="#getLocation"/>
+   </children>
+</AnchorPane>
